@@ -1,16 +1,16 @@
 {
  "actions": [],
  "allow_guest_to_view": 1,
+ "allow_import": 1,
  "allow_rename": 1,
  "app": "vendor",
- "autoname": "naming_series:",
+ "autoname": "field:title",
  "creation": "2024-06-19 12:00:00",
  "doctype": "DocType",
  "document_type": "Document",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "naming_series",
   "title",
   "description",
   "category",
@@ -45,26 +45,21 @@
   "approved_on",
   "section_break_31",
   "meta_title",
+  "published",
+  "route",
+  "column_break_sggt",
   "meta_description",
   "meta_keywords",
-  "amended_from",
-  "published",
-  "route"
+  "amended_from"
  ],
  "fields": [
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "label": "Series",
-   "options": "LST-.YYYY.-.MM.-.#####",
-   "reqd": 1
-  },
   {
    "fieldname": "title",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Title",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -121,9 +116,10 @@
   },
   {
    "fieldname": "location",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Location",
+   "options": "Location",
    "reqd": 1
   },
   {
@@ -132,16 +128,20 @@
    "label": "Full Address"
   },
   {
+   "fetch_from": "location.latitude",
    "fieldname": "latitude",
    "fieldtype": "Float",
    "label": "Latitude",
-   "precision": "8"
+   "precision": "8",
+   "read_only": 1
   },
   {
+   "fetch_from": "location.longitude",
    "fieldname": "longitude",
    "fieldtype": "Float",
    "label": "Longitude",
-   "precision": "8"
+   "precision": "8",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_15",
@@ -149,7 +149,7 @@
   },
   {
    "fieldname": "contact_phone",
-   "fieldtype": "Phone",
+   "fieldtype": "Data",
    "label": "Contact Phone"
   },
   {
@@ -159,7 +159,7 @@
   },
   {
    "fieldname": "contact_whatsapp",
-   "fieldtype": "Phone",
+   "fieldtype": "Data",
    "label": "WhatsApp Number"
   },
   {
@@ -180,6 +180,7 @@
    "options": "Listing Image"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_22",
    "fieldtype": "Section Break",
    "label": "Status & Settings"
@@ -237,6 +238,7 @@
    "read_only": 1
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_31",
    "fieldtype": "Section Break",
    "label": "SEO Settings"
@@ -295,17 +297,22 @@
    "fieldname": "published",
    "fieldtype": "Check",
    "label": "Is Published"
+  },
+  {
+   "fieldname": "column_break_sggt",
+   "fieldtype": "Column Break"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2025-10-27 12:42:55.958893",
+ "make_attachments_public": 1,
+ "modified": "2025-11-05 11:12:28.672388",
  "modified_by": "Administrator",
- "module": "vendor",
+ "module": "Vendor",
  "name": "Listing",
- "naming_rule": "By \"Naming Series\" field",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

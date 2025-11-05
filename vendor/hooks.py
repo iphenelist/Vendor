@@ -83,7 +83,8 @@ app_license = "mit"
 # ------------
 
 # before_install = "vendor.install.before_install"
-# after_install = "vendor.install.after_install"
+after_install = ["vendor.fixtures.location.execute"]
+after_migrate = ["vendor.fixtures.location.execute"]
 
 # Uninstallation
 # ------------
@@ -241,4 +242,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
