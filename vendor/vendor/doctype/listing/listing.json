@@ -1,0 +1,356 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "app": "vendor",
+ "autoname": "naming_series:",
+ "creation": "2024-06-19 12:00:00",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "title",
+  "description",
+  "category",
+  "column_break_5",
+  "price",
+  "currency",
+  "listing_type",
+  "condition",
+  "discount",
+  "discount_amount",
+  "discount_duration",
+  "section_break_10",
+  "location",
+  "address",
+  "latitude",
+  "longitude",
+  "column_break_15",
+  "contact_phone",
+  "contact_email",
+  "contact_whatsapp",
+  "show_contact_info",
+  "section_break_20",
+  "images",
+  "section_break_22",
+  "status",
+  "featured",
+  "expires_on",
+  "column_break_26",
+  "views_count",
+  "created_by_user",
+  "approved_by",
+  "approved_on",
+  "section_break_31",
+  "meta_title",
+  "meta_description",
+  "meta_keywords",
+  "amended_from",
+  "published",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "LST-.YYYY.-.MM.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price",
+   "precision": "2"
+  },
+  {
+   "default": "TZS",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "default": "For Sale",
+   "fieldname": "listing_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Listing Type",
+   "options": "For Sale\nFor Rent\nService\nWanted",
+   "reqd": 1
+  },
+  {
+   "default": "New",
+   "fieldname": "condition",
+   "fieldtype": "Select",
+   "label": "Condition",
+   "options": "New\nUsed\nRefurbished"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Location & Contact"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Full Address"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "Latitude",
+   "precision": "8"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "Longitude",
+   "precision": "8"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_phone",
+   "fieldtype": "Phone",
+   "label": "Contact Phone"
+  },
+  {
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "Contact Email"
+  },
+  {
+   "fieldname": "contact_whatsapp",
+   "fieldtype": "Phone",
+   "label": "WhatsApp Number"
+  },
+  {
+   "default": "1",
+   "fieldname": "show_contact_info",
+   "fieldtype": "Check",
+   "label": "Show Contact Info"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break",
+   "label": "Images"
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Table",
+   "label": "Images",
+   "options": "Listing Image"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break",
+   "label": "Status & Settings"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nApproved\nRejected",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "featured",
+   "fieldtype": "Check",
+   "label": "Featured Listing",
+   "read_only": 1
+  },
+  {
+   "fieldname": "expires_on",
+   "fieldtype": "Date",
+   "label": "Expires On"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "views_count",
+   "fieldtype": "Int",
+   "label": "Views Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "created_by_user",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_on",
+   "fieldtype": "Datetime",
+   "label": "Approved On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break",
+   "label": "SEO Settings"
+  },
+  {
+   "fieldname": "meta_title",
+   "fieldtype": "Data",
+   "label": "Meta Title"
+  },
+  {
+   "fieldname": "meta_description",
+   "fieldtype": "Text",
+   "label": "Meta Description"
+  },
+  {
+   "fieldname": "meta_keywords",
+   "fieldtype": "Text",
+   "label": "Meta Keywords"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "discount",
+   "fieldtype": "Check",
+   "label": "Discount?"
+  },
+  {
+   "depends_on": "eval: doc.discount",
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Discount Amount"
+  },
+  {
+   "depends_on": "eval: doc.discount",
+   "fieldname": "discount_duration",
+   "fieldtype": "Duration",
+   "label": "Discount Duration"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Listing",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2025-10-27 12:42:55.958893",
+ "modified_by": "Administrator",
+ "module": "vendor",
+ "name": "Listing",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vendor Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vendor User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "listing",
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1,
+ "track_views": 1
+}

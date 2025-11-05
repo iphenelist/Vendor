@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2024-06-19 12:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "listing",
+  "buyer",
+  "seller",
+  "column_break_4",
+  "last_message",
+  "last_message_time",
+  "last_message_by",
+  "section_break_8",
+  "is_active",
+  "created_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "listing",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Listing",
+   "options": "Listing",
+   "reqd": 1
+  },
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Buyer",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "seller",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Seller",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_message",
+   "fieldtype": "Text",
+   "label": "Last Message",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_message_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Last Message Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_message_by",
+   "fieldtype": "Link",
+   "label": "Last Message By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Datetime",
+   "label": "Created On",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-19 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "vendor",
+ "name": "Conversation",
+ "app": "vendor",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vendor Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vendor User",
+   "share": 1,
+   "write": 1,
+   "if_owner": 1
+  }
+ ],
+ "sort_field": "last_message_time",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

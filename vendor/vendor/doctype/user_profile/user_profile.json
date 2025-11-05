@@ -1,0 +1,275 @@
+{
+ "actions": [],
+ "autoname": "field:user",
+ "creation": "2024-06-19 12:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "phone_number",
+  "whatsapp_number",
+  "column_break_4",
+  "location",
+  "address",
+  "bio",
+  "section_break_8",
+  "profile_image",
+  "cover_image",
+  "column_break_11",
+  "verification_status",
+  "rating",
+  "total_ratings",
+  "section_break_15",
+  "social_media_section",
+  "facebook_url",
+  "twitter_url",
+  "instagram_url",
+  "linkedin_url",
+  "section_break_20",
+  "preferences_section",
+  "email_notifications",
+  "sms_notifications",
+  "marketing_emails",
+  "section_break_24",
+  "stats_section",
+  "total_listings",
+  "active_listings",
+  "sold_listings",
+  "join_date",
+  "last_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "whatsapp_number",
+   "fieldtype": "Phone",
+   "label": "WhatsApp Number"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "bio",
+   "fieldtype": "Text",
+   "label": "Bio"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Images"
+  },
+  {
+   "fieldname": "profile_image",
+   "fieldtype": "Attach Image",
+   "label": "Profile Image"
+  },
+  {
+   "fieldname": "cover_image",
+   "fieldtype": "Attach Image",
+   "label": "Cover Image"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Unverified",
+   "fieldname": "verification_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Verification Status",
+   "options": "Unverified\nPending\nVerified\nRejected"
+  },
+  {
+   "default": "0",
+   "fieldname": "rating",
+   "fieldtype": "Float",
+   "label": "Average Rating",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_ratings",
+   "fieldtype": "Int",
+   "label": "Total Ratings",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "social_media_section",
+   "fieldtype": "Section Break",
+   "label": "Social Media"
+  },
+  {
+   "fieldname": "facebook_url",
+   "fieldtype": "Data",
+   "label": "Facebook URL"
+  },
+  {
+   "fieldname": "twitter_url",
+   "fieldtype": "Data",
+   "label": "Twitter URL"
+  },
+  {
+   "fieldname": "instagram_url",
+   "fieldtype": "Data",
+   "label": "Instagram URL"
+  },
+  {
+   "fieldname": "linkedin_url",
+   "fieldtype": "Data",
+   "label": "LinkedIn URL"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "preferences_section",
+   "fieldtype": "Section Break",
+   "label": "Notification Preferences"
+  },
+  {
+   "default": "1",
+   "fieldname": "email_notifications",
+   "fieldtype": "Check",
+   "label": "Email Notifications"
+  },
+  {
+   "default": "0",
+   "fieldname": "sms_notifications",
+   "fieldtype": "Check",
+   "label": "SMS Notifications"
+  },
+  {
+   "default": "1",
+   "fieldname": "marketing_emails",
+   "fieldtype": "Check",
+   "label": "Marketing Emails"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stats_section",
+   "fieldtype": "Section Break",
+   "label": "Statistics"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_listings",
+   "fieldtype": "Int",
+   "label": "Total Listings",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "active_listings",
+   "fieldtype": "Int",
+   "label": "Active Listings",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sold_listings",
+   "fieldtype": "Int",
+   "label": "Sold Listings",
+   "read_only": 1
+  },
+  {
+   "fieldname": "join_date",
+   "fieldtype": "Date",
+   "label": "Join Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_active",
+   "fieldtype": "Datetime",
+   "label": "Last Active",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-19 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "vendor",
+ "name": "User Profile",
+ "app": "vendor",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vendor Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vendor User",
+   "share": 1,
+   "write": 1,
+   "if_owner": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

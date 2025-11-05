@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "app": "vendor",
+ "autoname": "hash",
+ "creation": "2024-06-19 12:00:00",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "listing",
+  "added_date",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "listing",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Listing",
+   "options": "Listing",
+   "reqd": 1
+  },
+  {
+   "fieldname": "added_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Added Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-12 00:18:55.591666",
+ "modified_by": "Administrator",
+ "module": "vendor",
+ "name": "Wishlist",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vendor Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vendor User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "added_date",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

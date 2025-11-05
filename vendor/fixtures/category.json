@@ -1,0 +1,106 @@
+[
+  {
+    "doctype": "Category",
+    "name": "Electronics",
+    "category_name": "Electronics",
+    "description": "Electronic devices and gadgets",
+    "icon": "fas fa-laptop",
+    "is_active": 1,
+    "sort_order": 1,
+    "meta_title": "Electronics - Buy and Sell Electronic Devices",
+    "meta_description": "Find the latest electronics, smartphones, laptops, and gadgets on Vendor"
+  },
+  {
+    "doctype": "Category",
+    "name": "Smartphones",
+    "category_name": "Smartphones",
+    "description": "Mobile phones and accessories",
+    "parent_category": "Electronics",
+    "icon": "fas fa-mobile-alt",
+    "is_active": 1,
+    "sort_order": 1
+  },
+  {
+    "doctype": "Category",
+    "name": "Laptops & Computers",
+    "category_name": "Laptops & Computers",
+    "description": "Laptops, desktops, and computer accessories",
+    "parent_category": "Electronics",
+    "icon": "fas fa-laptop",
+    "is_active": 1,
+    "sort_order": 2
+  },
+  {
+    "doctype": "Category",
+    "name": "Vehicles",
+    "category_name": "Vehicles",
+    "description": "Cars, motorcycles, and other vehicles",
+    "icon": "fas fa-car",
+    "is_active": 1,
+    "sort_order": 2,
+    "meta_title": "Vehicles - Buy and Sell Cars, Motorcycles",
+    "meta_description": "Find cars, motorcycles, and other vehicles for sale on Vendor"
+  },
+  {
+    "doctype": "Category",
+    "name": "Cars",
+    "category_name": "Cars",
+    "description": "New and used cars",
+    "parent_category": "Vehicles",
+    "icon": "fas fa-car",
+    "is_active": 1,
+    "sort_order": 1
+  },
+  {
+    "doctype": "Category",
+    "name": "Motorcycles",
+    "category_name": "Motorcycles",
+    "description": "Motorcycles and scooters",
+    "parent_category": "Vehicles",
+    "icon": "fas fa-motorcycle",
+    "is_active": 1,
+    "sort_order": 2
+  },
+  {
+    "doctype": "Category",
+    "name": "Real Estate",
+    "category_name": "Real Estate",
+    "description": "Properties for sale and rent",
+    "icon": "fas fa-home",
+    "is_active": 1,
+    "sort_order": 3,
+    "meta_title": "Real Estate - Properties for Sale and Rent",
+    "meta_description": "Find houses, apartments, and commercial properties on Vendor"
+  },
+  {
+    "doctype": "Category",
+    "name": "Houses",
+    "category_name": "Houses",
+    "description": "Houses for sale and rent",
+    "parent_category": "Real Estate",
+    "icon": "fas fa-home",
+    "is_active": 1,
+    "sort_order": 1
+  },
+  {
+    "doctype": "Category",
+    "name": "Apartments",
+    "category_name": "Apartments",
+    "description": "Apartments and condos",
+    "parent_category": "Real Estate",
+    "icon": "fas fa-building",
+    "is_active": 1,
+    "sort_order": 2
+  },
+  {
+    "doctype": "Category",
+    "name": "Fashion & Beauty",
+    "category_name": "Fashion & Beauty",
+    "description": "Clothing, shoes, and beauty products",
+    "icon": "fas fa-tshirt",
+    "is_active": 1,
+    "sort_order": 4,
+    "meta_title": "Fashion & Beauty - Clothing and Accessories",
+    "meta_description": "Shop for clothing, shoes, accessories, and beauty products on Vendor"
+  }
+]

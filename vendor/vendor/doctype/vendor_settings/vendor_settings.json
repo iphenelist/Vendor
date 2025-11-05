@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-12 01:09:30.273072",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_site",
+  "location",
+  "phone_number",
+  "column_break_fzvy",
+  "site_logo",
+  "email",
+  "default_currency",
+  "sub_main_about",
+  "section_break_sgjw",
+  "main_about_us",
+  "section_break_umse",
+  "refund_and_returns_policy",
+  "section_break_ribw",
+  "terms_of_services"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_site",
+   "fieldtype": "Data",
+   "label": "Name of Site"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "column_break_fzvy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_logo",
+   "fieldtype": "Attach Image",
+   "label": "Site Logo"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "default": "TZS",
+   "fieldname": "default_currency",
+   "fieldtype": "Link",
+   "label": "Default Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "section_break_sgjw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sub_main_about",
+   "fieldtype": "Small Text",
+   "label": "Sub-main about"
+  },
+  {
+   "fieldname": "main_about_us",
+   "fieldtype": "Text Editor",
+   "label": "Main about Us"
+  },
+  {
+   "fieldname": "section_break_umse",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "refund_and_returns_policy",
+   "fieldtype": "Text Editor",
+   "label": "Refund and Returns Policy"
+  },
+  {
+   "fieldname": "section_break_ribw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "terms_of_services",
+   "fieldtype": "Text Editor",
+   "label": "Terms of Services"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-10-12 11:20:25.712552",
+ "modified_by": "Administrator",
+ "module": "vendor",
+ "name": "Vendor Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
