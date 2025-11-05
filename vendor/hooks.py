@@ -51,13 +51,13 @@ app_license = "mit"
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "vendor/public/icons.svg"
+app_include_icons = "vendor/public/icons.svg"
 
 # Home Pages
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+home_page = "listing"
 
 # website user home page (by Role)
 # role_home_page = {
